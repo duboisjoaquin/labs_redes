@@ -1,0 +1,55 @@
+file 2017335 1715555422                                         
+version 3
+run General-0-20240512-20:08:39-44952
+attr configname General
+attr datetime 20240512-20:08:39
+attr datetimef 20240512-200839
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 44952
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network Network
+config sim-time-limit 200s
+config Network.nodeTx.gen.packetByteSize 12500
+config Network.nodeTx.serviceTime exponential(0.001)
+config Network.nodeTx.gen.generationInterval exponential(0.001)
+config Network.nodeTx.transportTx.bufferSize 2000000
+config Network.queue.bufferSize 200
+config Network.queue.serviceTime exponential(0.001)
+config Network.queue1.bufferSize 200
+config Network.queue1.serviceTime exponential(0.001)
+config Network.queue2.bufferSize 200
+config Network.queue2.serviceTime exponential(0.001)
+config Network.nodeRx.transportRx.bufferSize 200
+config Network.nodeRx.serviceTime exponential(0.001)
+
+vector 0 Network.nodeTx.transportTx PacketDropQueue ETV
+vector 1 Network.queue1 "" ETV
+vector 2 Network.nodeRx.transportRx PacketDropQueue ETV
+vector 3 Network.queue2 "" ETV
+vector 4 Network.nodeTx.transportTx BufferSizeQueue ETV
+vector 5 Network.queue1 "" ETV
+vector 6 Network.nodeRx.transportRx BufferSizeQueue ETV
+vector 7 Network.nodeRx.sink Delay ETV
+vector 8 Network.queue2 "" ETV
+4	1432 952890 2 67159 0.000795874505 32.446871766213 32768 1 32443 531520605 11496102584197
+4	954322 996067 67161 133844 32.449038244849 65.243296525733 32768 32444 65047 1597290352 80763333981560
+0	1950389 8 0 0 0 0 1 0 0 0 0
+1	1950397 8 0 0 0 0 1 0 0 0 0
+2	1950405 8 0 0 0 0 1 0 0 0 0
+3	1950413 8 0 0 0 0 1 0 0 0 0
+4	1950421 27549 133846 135656 65.243399335722 66.099884159666 892 65048 65935 58418572 3825988567174
+5	1977970 12754 203 135657 0.100895874505 66.100895874505 493 1 1 493 493
+6	1990724 13496 412 135466 0.200995874505 66.000995874505 492 1 162 53461 7243399
+7	2004220 13088 799 135464 0.400995874505 66.000995874505 329 0.4002 65.662010419012 10867.571661451 476488.74577754
+8	2017308 26 66842 66842 32.301255874505 32.301255874505 1 1 1 1 1
+

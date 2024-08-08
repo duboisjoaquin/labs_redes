@@ -1,0 +1,52 @@
+file 74496 1717190277                                           
+version 3
+run General-0-20240531-18:17:38-9781
+attr configname General
+attr datetime 20240531-18:17:38
+attr datetimef 20240531-181738
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 9781
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network Network
+config sim-time-limit 200s
+config Network.node[{0,2}].app.interArrivalTime exponential(1)
+config Network.node[{0,2}].app.packetByteSize 125000
+config Network.node[{0,2}].app.destination 5
+
+vector 0 Network.node[0].lnk[0] "Buffer Size" ETV
+vector 1 Network.node[1].lnk[0] "Buffer Size" ETV
+vector 2 Network.node[2].lnk[0] "Buffer Size" ETV
+vector 3 Network.node[3].lnk[0] "Buffer Size" ETV
+vector 4 Network.node[4].lnk[0] "Buffer Size" ETV
+vector 5 Network.node[5].lnk[0] "Buffer Size" ETV
+vector 6 Network.node[6].lnk[0] "Buffer Size" ETV
+vector 7 Network.node[7].lnk[0] "Buffer Size" ETV
+vector 8 Network.node[2].lnk[1] "Buffer Size" ETV
+vector 9 Network.node[3].lnk[1] "Buffer Size" ETV
+vector 10 Network.node[4].lnk[1] "Buffer Size" ETV
+vector 11 Network.node[5].app Delay ETV
+vector 12 Network.node[5].app CantHops ETV
+0	1251 10283 1 6625 0 199.155390204255 413 0 9 1823 10415
+1	11534 249 2 289 0 0.000812 16 0 1 8 8
+2	11783 249 3 290 0 0.000812 16 0 1 8 8
+3	12032 249 4 291 0 0.000812 16 0 1 8 8
+4	12281 249 5 292 0 0.000812 16 0 1 8 8
+5	12530 249 6 293 0 0.000812 16 0 1 8 8
+6	12779 10093 7 6635 0 199.155590204255 404 0 1 202 202
+7	22872 10141 8 6630 0 199.155490204255 406 0 1 203 203
+8	33013 9532 330 6645 1.859604212075 199.64888529358 377 0 10 1241 6461
+9	42545 9490 343 6649 2.859704212075 199.64898529358 374 0 1 187 187
+10	52035 9816 367 6619 3.859804212075 198.649252527223 372 0 1 186 186
+11	61851 7552 377 6638 3.898860388484 199.155690204255 193 3.0003 11.787344383948 1449.1214739366 11926.411698992
+12	69403 5092 377 6638 3.898860388484 199.155690204255 193 2 2 386 772
+
